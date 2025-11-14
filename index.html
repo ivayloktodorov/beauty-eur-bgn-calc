@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Beauty за минути — EUR↔BGN Ресто Калкулатор</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="logo">Beauty<span> за минути</span></div>
+          <div class="tag">EUR ↔ BGN Ресто Калкулатор</div>
+        </div>
+        <nav class="byline">1 EUR = 1.95583 BGN</nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h1>Калкулатор за ресто</h1>
+        <p class="lead">Въведи цена и внесена сума — калкулаторът ще изчисли ресто и ще синхронизира стойностите между EUR и BGN.</p>
+
+        <div class="table-wrap">
+          <table class="calc-table" role="table" aria-label="EUR BGN calculator">
+            <thead>
+              <tr>
+                <th></th>
+                <th>цена на услугата</th>
+                <th>платена сума</th>
+                <th>ресто</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>EUR</th>
+                <td><input id="price-eur" class="num-input" inputmode="decimal" placeholder="0.00" aria-label="Цена на услугата в евро" /></td>
+                <td><input id="paid-eur" class="num-input" inputmode="decimal" placeholder="0.00" aria-label="Платена сума в евро" /></td>
+                <td><output id="change-eur" class="result" aria-live="polite">—</output></td>
+              </tr>
+              <tr>
+                <th>BGN</th>
+                <td><input id="price-bgn" class="num-input" inputmode="decimal" placeholder="0.00" aria-label="Цена на услугата в лева" /></td>
+                <td><input id="paid-bgn" class="num-input" inputmode="decimal" placeholder="0.00" aria-label="Платена сума в лева" /></td>
+                <td><output id="change-bgn" class="result" aria-live="polite">—</output></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="notes">
+          <p>Сметките се правят с курс <strong>1 EUR = 1.95583 BGN</strong>. Можеш да въвеждаш числа с точка или запетая.</p>
+        </div>
+
+        <footer class="card-footer">
+          <small>Продукт на <strong>Beauty за минути</strong></small>
+        </footer>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
