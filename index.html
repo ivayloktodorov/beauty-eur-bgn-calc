@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="bg">
-  <head>
+    <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Beauty за минути — EUR↔BGN Ресто Калкулатор</title>
+    <title>Beauty за минути — Ресто калкулатор</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -19,8 +19,12 @@
 
     <main class="container">
       <section class="card">
-        <h1>Калкулатор за ресто</h1>
-        <p class="lead">Въведи цена и внесена сума — калкулаторът ще изчисли ресто и ще синхронизира стойностите между EUR и BGN.</p>
+        <h1>Ресто калкулатор</h1>
+        <p class="lead">въведи цена за услугата. Въведи получената сума в EUR или BGN. Калкулаторът ще изчисли рестото.</p>
+
+        <div class="mixed-payment" style="margin-bottom:12px;">
+          <label><input type="checkbox" id="mixed-payment" /> Смесено плащане (въведи отделно получените суми в EUR и BGN)</label>
+        </div>
 
         <div class="table-wrap">
           <table class="calc-table" role="table" aria-label="EUR BGN calculator">
@@ -51,10 +55,6 @@
 
         <div class="notes">
           <p>Сметките се правят с курс <strong>1 EUR = 1.95583 BGN</strong>. Можеш да въвеждаш числа с точка или запетая.</p>
-        </div>
-
-        <div class="mixed-payment">
-          <label><input type="checkbox" id="mixed-payment" /> Смесено плащане (въведи отделно получените суми в EUR и BGN)</label>
           <p class="lead" style="margin-top:6px;color:var(--muted);font-size:13px;">Пример: цена 30 EUR, платено 20 EUR + доплащане в BGN. Отметни за да въвеждаш и двете платени суми независимо.</p>
         </div>
 
